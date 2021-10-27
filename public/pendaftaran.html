@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="src/style.css">
+    <title>Pendaftaran | PPDB MAN 2 PONOROGO</title>
+</head>
+<body class="font-rubik">
+    <div class="flex justify-start">
+        <aside class="fixed z-10 w-1/6 pb-6 bg-white ml-14">
+            <div class="mt-10 mb-4">
+                <img src="img/logo.png" alt="logo man 2 ponorogo" class="w-24 mx-auto">
+                <h1 class="py-4 font-bold text-center text-md">PPDB ONLINE<span class="block font-normal">MAN 2 PONOROGO</span></h1>
+            </div>
+            <div class="text-sm text-gray-800">
+                <div class="flex items-center justify-start px-4 py-3 rounded-lg hover:bg-green-50">
+                    <img src="img/icon-dashboard.svg" alt="dashboard icon" class="w-5 mr-2">
+                    <a href="index.html">Dashboard</a>
+                </div>
+                <div class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg bg-green-50">
+                    <img src="img/icon-register.svg" alt="register icon" class="w-5 mr-2">
+                    <a href="pendaftaran.html">Pendaftaran</a>
+                </div>
+                <div class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg hover:bg-green-50">
+                    <img src="img/icon-reportvalidate.svg" alt="report validation icon" class="w-5 mr-2">
+                    <a href="validasi_nilai_rapor.html">Validasi Nilai Rapor</a>
+                </div>
+                <div class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg hover:bg-green-50">
+                    <img src="img/icon-cbt.svg" alt="cbt icon" class="w-5 mr-2">
+                    <a href="#">Input Nilai CBT</a>
+                </div>
+                <div class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg hover:bg-green-50">
+                    <img src="img/icon-registeragain.svg" alt="register again icon" class="w-5 mr-2">
+                    <a href="#">Daftar Ulang</a>
+                </div>
+                <div class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg hover:bg-red-50">
+                    <img src="img/icon-logout.svg" alt="logout icon" class="w-5 mr-2">
+                    <a href="login.html" class="text-red-600">Keluar</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="w-full p-10 bg-gray-100 ml-80">
+            <div class="bg-white rounded-lg">
+                <div class="flex justify-between text-gray-600 border-b border-gray-400">
+                    <div class="p-4">
+                            <select name="choose_school" class="p-4 pr-56 rounded-lg shadow-md">
+                                <option value="">Semua Sekolah</option>
+                                <option value="">SMPN 1 Ponorogo</option>
+                                <option value="">SMPN 2 Ponorogo</option>
+                                <option value="">SMPN 3 Ponorogo</option>
+                                <option value="">SMPN 4 Ponorogo</option>
+                            </select>
+                    </div>
+                    <div class="w-1/2 p-4">
+                        <div class="flex">
+                        <select name="choose_school" class="w-full p-4 rounded-lg shadow-md">
+                            <option value="">Semua Status</option>
+                            <option value="">Sudah Validasi</option>
+                            <option value="">Belum Validasi</option>
+                        </select>
+
+                        <select name="choose_school" class="w-full p-4 ml-4 rounded-lg shadow-md">
+                            <option value="">Semua Jalur Daftar</option>
+                            <option value="">BINPRES</option>
+                            <option value="">REGULER</option>
+                        </select>
+                    </div>
+
+                        <div class="relative flex items-center justify-between w-full h-10 pl-3 pr-2 mt-5 bg-white border rounded-lg">
+                            <input type="search" name="search" id="search" placeholder="Search"
+                                   class="w-full outline-none appearance-none focus:outline-none active:outline-none"/>
+                            <button type="submit" class="ml-1 outline-none focus:outline-none active:outline-none">
+                              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                   viewBox="0 0 24 24" class="w-6 h-6">
+                                <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                              </svg>
+                            </button>
+                          </div>
+                    </div>
+                </div>
+                <table class="w-full table-auto">
+                    <thead class="text-gray-600 bg-gray-100">
+                      <tr>
+                        <th class="p-4 text-sm font-medium">NAMA LENGKAP</th>
+                        <th class="text-sm font-medium">ASAL SEKOLAH</th>
+                        <th class="text-sm font-medium">JALUR DAFTAR</th>
+                        <th class="text-sm font-medium">STATUS</th>
+                        <th class="text-sm font-medium">AKSI</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="text-sm text-center text-gray-600 border-t border-gray-400">
+                        <td class="py-4">Sincan Maulana</td>
+                        <td class="py-4">SMPN 1 Ponorogo</td>
+                        <td class="py-4">BINPRES</td>
+                        <td class="py-4"><span class="box-border px-2 py-1 text-green-700 bg-green-100 rounded-full">Sudah Validasi</span></td>
+                        <td class="py-4"><a href="detil_data_siswa.html" class="flex items-center justify-center"><span>Detil</span><img src="img/icon-detil.svg" alt="icon detil" class="w-5 ml-1"></a></td>
+                      </tr>
+                      
+                      <tr class="text-sm text-center text-gray-600 border-t border-gray-400">
+                        <td class="py-4">Bahtiar Rifai<i></i></td>
+                        <td class="py-4">SMPN 2 Ponorogo</td>
+                        <td class="py-4">Reguler</td>
+                        <td class="py-4"><span class="px-2 py-1 text-red-700 bg-red-100 rounded-full">Belum Validasi</span></td>
+                        <td class="py-4"><a href="#" class="flex items-center justify-center"><span>Detil</span><img src="img/icon-detil.svg" alt="icon detil" class="w-5 ml-1"></a></td>
+                      </tr>
+
+                      <tr class="text-sm text-center text-gray-600 border-t border-gray-400">
+                        <td class="py-4">Bahtiar Rifai<i></i></td>
+                        <td class="py-4">SMPN 2 Ponorogo</td>
+                        <td class="py-4">BINPRES</td>
+                        <td class="py-4"><span class="px-2 py-1 text-red-700 bg-red-100 rounded-full">Belum Validasi</span></td>
+                        <td class="py-4"><a href="#" class="flex items-center justify-center"><span>Detil</span><img src="img/icon-detil.svg" alt="icon detil" class="w-5 ml-1"></a></td>
+                      </tr>
+
+                      <tr class="text-sm text-center text-gray-600 border-t border-gray-400">
+                        <td class="py-4">Bahtiar Rifai<i></i></td>
+                        <td class="py-4">SMPN 2 Ponorogo</td>
+                        <td class="py-4">BINPRES</td>
+                        <td class="py-4"><span class="px-2 py-1 text-red-700 bg-red-100 rounded-full">Belum Validasi</span></td>
+                        <td class="py-4"><a href="#" class="flex items-center justify-center"><span>Detil</span><img src="img/icon-detil.svg" alt="icon detil" class="w-5 ml-1"></a></td>
+                      </tr>
+
+                      <tr class="text-sm text-center text-gray-600 border-t border-gray-400">
+                        <td class="py-4">Bahtiar Rifai<i></i></td>
+                        <td class="py-4">SMPN 2 Ponorogo</td>
+                        <td class="py-4">Reguler</td>
+                        <td class="py-4"><span class="px-2 py-1 text-red-700 bg-red-100 rounded-full">Belum Validasi</span></td>
+                        <td class="py-4"><a href="#" class="flex items-center justify-center"><span>Detil</span><img src="img/icon-detil.svg" alt="icon detil" class="w-5 ml-1"></a></td>
+                      </tr>
+
+                      <tr class="text-sm text-center text-gray-600 border-t border-gray-400">
+                        <td class="py-4">Bahtiar Rifai<i></i></td>
+                        <td class="py-4">SMPN 2 Ponorogo</td>
+                        <td class="py-4">Reguler</td>
+                        <td class="py-4"><span class="px-2 py-1 text-red-700 bg-red-100 rounded-full">Belum Validasi</span></td>
+                        <td class="py-4"><a href="#" class="flex items-center justify-center"><span>Detil</span><img src="img/icon-detil.svg" alt="icon detil" class="w-5 ml-1"></a></td>
+                      </tr>
+
+                      
+                    </tbody>
+                  </table>
+                  <div
+                  class="flex flex-col items-center px-5 py-5 border-t xs:flex-row xs:justify-between">
+                  <span class="text-xs text-gray-900 xs:text-sm">
+                      Menampilkan 1 - 6 dari 50 Data
+                  </span>
+                  <div class="inline-flex mt-2 xs:mt-0">
+                      <button
+                          class="px-4 py-2 text-sm font-semibold text-gray-800 bg-gray-300 rounded-l hover:bg-gray-400">
+                          Prev
+                      </button>
+                      <button
+                          class="px-4 py-2 text-sm font-semibold text-gray-800 bg-gray-300 rounded-r hover:bg-gray-400">
+                          Next
+                      </button>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

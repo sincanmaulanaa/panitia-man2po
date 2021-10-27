@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Detil Data Calon Siswa | PPDB MAN 2 PONOROGO</title>
+  </head>
+  <body class="font-rubik">
+    <div class="flex justify-start">
+      <aside class="fixed z-10 w-1/6 pb-6 bg-white ml-14">
+        <div class="mt-10 mb-4">
+          <img
+            src="img/logo.png"
+            alt="logo man 2 ponorogo"
+            class="w-24 mx-auto"
+          />
+          <h1 class="py-4 font-bold text-center text-md">
+            PPDB ONLINE<span class="block font-normal">MAN 2 PONOROGO</span>
+          </h1>
+        </div>
+        <div class="text-sm text-gray-800">
+          <div
+            class="flex items-center justify-start px-4 py-3 rounded-lg  hover:bg-green-50"
+          >
+            <img
+              src="img/icon-dashboard.svg"
+              alt="dashboard icon"
+              class="w-5 mr-2"
+            />
+            <a href="index.html">Dashboard</a>
+          </div>
+          <div
+            class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg  hover:bg-green-50"
+          >
+            <img
+              src="img/icon-register.svg"
+              alt="register icon"
+              class="w-5 mr-2"
+            />
+            <a href="pendaftaran.html">Pendaftaran</a>
+          </div>
+          <div
+            class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg  bg-green-50"
+          >
+            <img
+              src="img/icon-reportvalidate.svg"
+              alt="report validation icon"
+              class="w-5 mr-2"
+            />
+            <a href="validasi_nilai_rapor.html">Validasi Nilai Rapor</a>
+          </div>
+          <div
+            class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg  hover:bg-green-50"
+          >
+            <img src="img/icon-cbt.svg" alt="cbt icon" class="w-5 mr-2" />
+            <a href="#">Input Nilai CBT</a>
+          </div>
+          <div
+            class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg  hover:bg-green-50"
+          >
+            <img
+              src="img/icon-registeragain.svg"
+              alt="register again icon"
+              class="w-5 mr-2"
+            />
+            <a href="#">Daftar Ulang</a>
+          </div>
+          <div
+            class="flex items-center justify-start px-4 py-3 mt-4 rounded-lg  hover:bg-red-50"
+          >
+            <img src="img/icon-logout.svg" alt="logout icon" class="w-5 mr-2" />
+            <a href="login.html" class="text-red-600">Keluar</a>
+          </div>
+        </div>
+      </aside>
+
+      <div class="w-full h-screen p-10 bg-gray-100 ml-80">
+        <div class="p-8 bg-white rounded-lg">
+          <div>
+            <a href="pendaftaran.html">
+              <button
+                class="flex items-center px-4 py-2 rounded-lg  bg-green-50 hover:bg-green-100"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-6 h-6 mr-1 text-gray-600"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z"
+                  />
+                </svg>
+                <span>Kembali</span>
+              </button>
+            </a>
+            <div class="flex items-center justify-between">
+              <h1 class="mt-6 text-2xl font-semibold text-gray-600">
+                Sincan Maulana
+              </h1>
+              <span class="mt-6 font-semibold text-gray-600 text-md"
+                >Kelas 7 Semester 1</span
+              >
+            </div>
+          </div>
+
+          <div class="flex justify-around my-10">
+            <div>
+              <div class="mb-7">
+                <label
+                  for="natural-science"
+                  class="flex items-center justify-between cursor-pointer"
+                >
+                  <span class="font-medium text-gray-600"
+                    >Ilmu Pengetahuan Alam</span
+                  >
+                  <div class="ml-8">
+                    <span class="font-medium text-gray-600">80</span>
+                    <input
+                      type="checkbox"
+                      name="natural_science"
+                      id="natural-science"
+                      class="text-green-500"
+                    />
+                  </div>
+                </label>
+              </div>
+              <div class="mb-7">
+                <label
+                  for="indonesian"
+                  class="flex items-center justify-between cursor-pointer"
+                >
+                  <span class="font-medium text-gray-600"
+                    >Bahasa Indonesia</span
+                  >
+                  <div class="ml-8">
+                    <span class="font-medium text-gray-600">80</span>
+                    <input
+                      type="checkbox"
+                      name="indonesian"
+                      id="indonesian"
+                      class="text-green-500"
+                    />
+                  </div>
+                </label>
+              </div>
+              <div class="mb-7">
+                <label
+                  for="math"
+                  class="flex items-center justify-between cursor-pointer"
+                >
+                  <span class="font-medium text-gray-600">Matematika</span>
+                  <div class="ml-8">
+                    <span class="font-medium text-gray-600">80</span>
+                    <input
+                      type="checkbox"
+                      name="math"
+                      id="math"
+                      class="text-green-500"
+                    />
+                  </div>
+                </label>
+              </div>
+              <div class="mb-7">
+                <label
+                  for="english"
+                  class="flex items-center justify-between cursor-pointer"
+                >
+                  <span class="font-medium text-gray-600">Bahasa Inggris</span>
+                  <div class="ml-8">
+                    <span class="font-medium text-gray-600">80</span>
+                    <input
+                      type="checkbox"
+                      name="english"
+                      id="english"
+                      class="text-green-500"
+                    />
+                  </div>
+                </label>
+              </div>
+              <div class="mb-7">
+                <label
+                  for="social-science"
+                  class="flex items-center justify-between cursor-pointer"
+                >
+                  <span class="font-medium text-gray-600"
+                    >Ilmu Pengetahuan Sosial</span
+                  >
+                  <div class="ml-8">
+                    <span class="font-medium text-gray-600">80</span>
+                    <input
+                      type="checkbox"
+                      name="social_science"
+                      id="social-science"
+                      class="text-green-500"
+                    />
+                  </div>
+                </label>
+              </div>
+            </div>
+            <div>
+              <img src="img/rapor.jpg" alt="rapor example" class="w-60" />
+            </div>
+          </div>
+          <div class="flex justify-end">
+            <button
+              type="submit"
+              class="px-4 py-2 text-white bg-green-400 rounded-md  hover:bg-green-500"
+            >
+              Berikutnya
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
